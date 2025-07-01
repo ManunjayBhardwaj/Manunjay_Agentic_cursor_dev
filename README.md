@@ -1,61 +1,98 @@
-# 📝 Vibe-Coded Todo App (Frontend Only)
 
-**Vibe Coding** is a concept where you vibe, and the system codes for you.
+# 🧠 Agentic React Project Builder with Vibe Coding
 
-This project is a simple, clean, and responsive **Todo App frontend**, built entirely through a conversational AI using a plan → action → observe → output loop. You just guide it — and it builds.
-
-## ✨ Features
-
-- Add, delete, and mark tasks as completed ✅
-- Filter by all, active, or completed tasks 🔍
-- React + Vite powered setup ⚛️⚡️
-- Fully component-based architecture 🧩
-- Built with pure vibes 💫
-
-## 📂 Project Structure
-
-```
-src/
-├── components/
-│   ├── TodoForm.jsx
-│   ├── TodoItem.jsx
-│   ├── TodoList.jsx
-├── App.jsx
-├── App.css
-└── main.jsx
-```
-
-## 🚀 Getting Started
-
-```bash
-# Clone the repo
-git clone https://github.com/yourusername/vibe-todo-frontend.git
-cd vibe-todo-frontend
-
-# Install dependencies
-npm install
-
-# Run the dev server
-npm run dev
-```
-
-## 🔮 What is Vibe Coding?
-
-It’s a way to code where **you just vibe**, and an AI system builds for you by executing your natural language instructions.
-
-## 🙌 Built With
-
-- [React](https://reactjs.org)
-- [Vite](https://vitejs.dev)
-- [Vibe Coding Mindset™]
-
-## 📸 Preview
-
-> Watch in 2X for a better experience 🔁
-
-## 📄 License
-
-MIT
+**Vibe Coding** is a concept where you *vibe and the system codes for you*.  
+This project demonstrates an **agentic AI assistant** built with Python that can autonomously scaffold full-stack React projects with backend, authentication, routing, and component structure using structured reasoning and tool execution.
 
 ---
-> Made with 💻 by **Manunjay Bhardwaj**
+
+## 💡 Features
+
+- 🔁 Structured REPL cycle (Plan → Action → Observe → Output)
+- 🧰 Custom tools for file creation, shell/Node commands, editing, and reading
+- ⚛️ Automatically scaffolds Vite-based React frontend with components
+- 🔒 Adds full-stack authentication with Express.js, MongoDB, and JWT
+- 📦 Backend API with REST endpoints for todos and auth
+- 📂 Generates detailed project structure for both frontend and backend
+
+---
+
+## 🛠️ Tech Stack
+
+- **Python** – Core automation and OpenAI loop
+- **OpenAI GPT-4o-mini** – Response generation in JSON format
+- **Node.js & Vite** – React project scaffolding
+- **Express.js** – Backend with Auth & Todo API
+- **MongoDB** – Database for persistent storage
+
+---
+
+## 🚀 Usage
+
+1. Set up your `.env` file with your OpenAI API key:
+   ```
+   OPENAI_API_KEY=your_key
+   ```
+
+2. Run the agent:
+   ```bash
+   python main.py
+   ```
+
+3. Type any instruction like:
+   ```
+   make a todo app
+   add login page
+   setup backend
+   ```
+
+4. The system will:
+   - Plan the structure
+   - Call tools to generate files and run commands
+   - Observe tool results and adapt
+   - Loop until your full project is generated!
+
+---
+
+## 📁 Folder Structure Example
+
+```
+todo-app/
+├── frontend/
+│   └── src/
+│       ├── components/
+│       ├── hooks/
+│       ├── pages/
+│       ├── services/
+│       ├── App.jsx
+│       └── main.jsx
+└── backend/
+    └── src/
+        ├── controllers/
+        ├── models/
+        ├── routes/
+        ├── middleware/
+        └── server.js
+```
+
+---
+
+## 🙌 Why Vibe Coding?
+
+Because you shouldn't have to write boilerplate or repeat yourself.
+Just *describe* what you want, and this assistant will handle the rest.
+
+---
+
+## 🧩 Future Ideas
+
+- Add Tailwind or Chakra UI setup
+- Deploy project on Vercel/Render
+- Integrate database provisioning
+- Add test coverage and CI/CD pipeline
+
+---
+
+## 📣 Made with love by **Manunjay Bhardwaj**  
+Follow me for more experiments in autonomous coding and vibe-driven development.
+
